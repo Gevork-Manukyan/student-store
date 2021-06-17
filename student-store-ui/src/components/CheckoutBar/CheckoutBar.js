@@ -3,9 +3,17 @@ import './CheckoutBar.css';
 
 function CheckoutBar () {
     return (
-        <div className="CheckoutBar">
-            
-        </div>
+        <section className="CheckoutBar closed">
+            <div className="content-wrapper">
+                <span className="arrow-button closed">
+                    <i className="material-icons md-48">arrow_forward</i>
+                </span>
+
+                <div className="shoppingCart">
+
+                </div>
+            </div>
+        </section>
     )
 }
 

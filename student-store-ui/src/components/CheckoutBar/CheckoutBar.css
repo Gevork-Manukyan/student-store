@@ -1,9 +1,17 @@
 .CheckoutBar {
     height: 100%;
     max-height: 100vh;
-    width: 50px;
     display: flex;
     flex-direction: column;
     position: fixed;
     background-color: lightblue;
+    transition: width 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.CheckoutBar.closed {
+    width: 60px;
+}
+
+.CheckoutBar.open {
+    width: 575px;
 }
