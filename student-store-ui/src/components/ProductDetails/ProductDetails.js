@@ -5,8 +5,6 @@ import { useState, useEffect } from 'react'
 import { formatAmount } from '../../utils/format';
 
 import axios from "axios"
-import { NotFoundError } from '../../../../student-store-api/utils/errors';
-
 
 function ProductDetails (props) {
 
@@ -23,7 +21,7 @@ function ProductDetails (props) {
             try {
 
                 const res = await axios.get(`http://localhost:3001/store/products/${productID}`);
-                setProduct(res?.body?.product);
+                setProduct(res?.data?.product);
 
             } catch(err) {
                 setError(err);
@@ -34,7 +32,9 @@ function ProductDetails (props) {
 
         fetchProductByID();
 
-    }, [productID])
+    }, [productID]);
+
+    console.log(product)
 
     return (
         <div className="ProductDetails">

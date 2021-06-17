@@ -21,7 +21,7 @@ function ProductDisplay () {
             
             try {
                 let res = await axios.get("http://localhost:3001/store/products");
-                let products = res?.body?.products;
+                let products = res?.data?.products;
                 
                 if (products) //if products exists
                     setProducts(products);
@@ -37,8 +37,6 @@ function ProductDisplay () {
         fetchProducts();
 
     }, [])
-
-
 
     return (
         <div className="ProductDisplay flex-container">
