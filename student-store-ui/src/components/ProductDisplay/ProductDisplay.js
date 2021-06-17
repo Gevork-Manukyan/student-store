@@ -1,7 +1,9 @@
 import axios from "axios"
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./ProductDisplay.css"
+import Product from "../Product/Product";
 
 
 function ProductDisplay () {
@@ -20,10 +22,10 @@ function ProductDisplay () {
             try {
                 let res = await axios.get("http://localhost:3001/store/products");
                 let products = res?.data?.products;
-                console.log(res.data.products)
                 
+                console.log(products)
                 if (products) //if products exists
-                    setProducts(res);
+                    setProducts(products);
 
             } catch (err) {
                 setError(err);
@@ -37,9 +39,13 @@ function ProductDisplay () {
 
     }, [])
 
+
+
     return (
         <div className="ProductDisplay">
-            
+            {products.map((product, idx) => (
+                <Link to={""}> <Product products={products} position={idx} /> </Link>
+            ))}
         </div>
     )
 }
