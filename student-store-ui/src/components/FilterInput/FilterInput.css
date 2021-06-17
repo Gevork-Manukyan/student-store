@@ -1,3 +1,23 @@
 .FilterInput {
-    
+    display: flex;
+    justify-content: center;
+}
+
+.FilterInput input {
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #e4e4e4;
+    font-size: 16px;
+}
+
+.FilterInput i {
+    height: 40px;
+    width: 40px;
+    background: green;
+    color: #fff;
+    fill: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
