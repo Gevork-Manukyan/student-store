@@ -23,7 +23,6 @@ function ProductDisplay () {
                 let res = await axios.get("http://localhost:3001/store/products");
                 let products = res?.data?.products;
                 
-                console.log(products)
                 if (products) //if products exists
                     setProducts(products);
 
@@ -44,7 +43,7 @@ function ProductDisplay () {
     return (
         <div className="ProductDisplay flex-container">
             {products.map((product, idx) => (
-                <Link to={""}> <Product product={product} position={idx} key={idx} /> </Link>
+                <Link to={`/store/products/${product.id}`}> <Product product={product} position={idx} key={idx} /> </Link>
             ))}
         </div>
     )

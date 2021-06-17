@@ -4,7 +4,6 @@ import './Product.css';
 
 function Product ({ product, position }) {
 
-    console.log(product)
     return (
         <div className="Product">
             <img src={product.image} alt={product.name} />

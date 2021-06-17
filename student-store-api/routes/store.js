@@ -1,5 +1,6 @@
 const express = require("express");
-const Store = require("../models/store")
+const Store = require("../models/store");
+const { NotFoundError } = require("../utils/errors");
 const router = express.Router();
 
 
@@ -20,5 +21,21 @@ router.get("/products", async(req, res, next) => {
     }
 })
 
+// fetch single product
+router.get("/products/:productID", async(req, res, next) => {
+    try {
+
+        const productID = req.params.productID;
+        const product = await Store.fetchProductByID(productID);
+
+        if(!product) 
+            throw new NotFoundError("Product not found");
+
+        res.status(200).json({ product });
+
+    } catch (err) {
+        next(err);
+    }
+})
 
 module.exports = router;
