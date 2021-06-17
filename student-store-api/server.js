@@ -17,16 +17,16 @@ app.use("/store", storeRouter);
 
 
 /* Handle all 404 errors that weren't matched by a route */
-app.get((req, res, next) => {
+app.use((req, res, next) => {
     return next(new NotFoundError());
 })
 
 /* Generic error handler - anything that is unhandled will be handled here */
-app.get((error, req, res, next) => {
+app.use((error, req, res, next) => {
     const status = error.status || 500;
     const message = error.message;
 
-    res.status(status).json({
+    return res.status(status).json({
         error: { message, status }
     })
 })
