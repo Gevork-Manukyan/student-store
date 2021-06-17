@@ -42,9 +42,9 @@ function ProductDisplay () {
 
 
     return (
-        <div className="ProductDisplay">
+        <div className="ProductDisplay flex-container">
             {products.map((product, idx) => (
-                <Link to={""}> <Product products={products} position={idx} /> </Link>
+                <Link to={""}> <Product product={product} position={idx} key={idx} /> </Link>
             ))}
         </div>
     )
