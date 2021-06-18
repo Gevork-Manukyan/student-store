@@ -1,0 +1,137 @@
+.ProductDetails {
+    margin-left: 60px;
+    margin-top: 5vw;
+
+}
+
+.ProductDetails .flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    /* max */
+    height: 450px;
+    /* max */
+    width: 371.25px;
+    left: 141px;
+    top: 124px;
+    border-radius: 33px;
+}
+
+.product-category {
+
+}
+
+.information-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-area .product-title {
+    margin-bottom: 3vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: start;
+}
+
+.information-area .product-description {
+    margin-bottom: 7vw;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: justify;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.information-area .checkout-area {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    padding: 5px;
+    width: 500px;
+    align-self: center;
+}
+
+.checkout-area .price {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.checkout-area .cart-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1.3vw;
+}
+
+.cart-buttons .minus-button {
+    background-color: #B92A2A;
+}
+
+.minus-button .minus {
+    transform: translateY(30%);
+}
+
+.cart-buttons .cart-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-information .cart-count {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    transform: translateY(-5px);
+}
+
+.cart-information .add-to-cart-button {
+    margin: 10px 0;
+    user-select: none;
+    padding: 7px;
+    border: solid;
+}
+
+.add-to-cart-button:active {
+    transform: translateY(1px);
+}
+
+.cart-buttons .plus-button {
+    background-color: #2AB952;
+    
+}
+
+.plus-button .plus {
+    transform: translateY(35%);
+}
+
+.btn {
+    user-select: none;
+    height: 83px;
+    width: 83px;
+    border-radius: 50%;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}

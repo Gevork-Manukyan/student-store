@@ -28,7 +28,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home setShoppingCart={setShoppingCart} />} />
-          <Route path="/store/products/:productID" element={<ProductDetails />} />
+          <Route path="/store/products/:productID" element={<ProductDetails setShoppingCart={setShoppingCart} />} />
 
         </Routes>
         
