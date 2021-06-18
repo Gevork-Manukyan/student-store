@@ -38,12 +38,14 @@ function ProductDisplay (props) {
     }, [])
 
     return (
-        <div className="ProductDisplay flex-container">
-            {products.map((product, idx) => (
-                <div className="product-wrapper">
-                    <Product product={product} position={idx} key={idx} setShoppingCart={props.setShoppingCart} /> 
-                </div>
-            ))}
+        <div id="buyNow">
+            <div className="ProductDisplay flex-container">
+                {products.map((product, idx) => (
+                    <div className="product-wrapper">
+                        <Product product={product} position={idx} key={idx} setShoppingCart={props.setShoppingCart} /> 
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

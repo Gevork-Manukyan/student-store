@@ -57,7 +57,7 @@ function ProductDetails (props) {
 
                             <div className="cart-information">
 
-                                <span className="cart-count">5</span>
+                                <span className="cart-count">0</span>
                                 <span className="add-to-cart-button">Add To Cart</span>
 
                             </div>
