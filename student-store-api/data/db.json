@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Rice Krispies",
-      "category": "food",
+      "category": "Food",
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/RKTsquares.jpg",
       "source": "https://en.wikipedia.org/wiki/Rice_Krispies_Treats",
       "description": "Delicious corn-based rice grains melted together with marshmallows into a square-like shape.",
@@ -12,11 +12,38 @@
     {
       "id": 2,
       "name": "Flamin Hot Cheetos",
-      "category": "food",
+      "category": "Food",
       "image": "https://static.openfoodfacts.org/images/products/896/400/009/0879/front_en.14.full.jpg",
       "source": "https://world.openfoodfacts.org/cgi/product_image.pl?code=8964000090879&id=front_en",
       "description": "No one knows what's in the powder that covers these snacks, but wow is it amazing!",
       "price": 1.5
+    },
+    {
+      "id": 3,
+      "name": "Watermelon",
+      "category": "Food",
+      "image": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/whole-and-slices-watermelon-400x300.jpg",
+      "source": "https://www.gardeningknowhow.com/edible/fruits/watermelon/pick-a-watermelon.htm",
+      "description": "These seedless watermelons have a crisp, juicy flavor. Enjoy anytime as a healthy, hydrating vitamin-packed snack.",
+      "price": 4.99
+    },
+    {
+      "id": 4,
+      "name": "Roses",
+      "category": "Decoration",
+      "image": "https://fyf.tac-cdn.net/images/products/large/F-587.jpg",
+      "source": "https://www.gardeningknowhow.com/edible/fruits/watermelon/pick-a-watermelon.htm",
+      "description": "A delightful assortment of the freshest roses is the perfect gift for a birthday, anniversary, or just because. Every rose has a different meaning, and with all the colors of the rainbow, this bouquet is sure to fill their day with joy for any occasion.",
+      "price": 19.99
+    },
+    {
+      "id": 5,
+      "name": "Pokemon Cards",
+      "category": "Gaming",
+      "image": "https://i5.walmartimages.com/asr/65a0fc6c-258c-4271-9cb9-4187a9a2e039.e80209cba7892b70404b6022097f98b1.png",
+      "source": "https://www.walmart.com/ip/Pokemon-TCG-Sword-Shield-4-5-Shining-Fates-Elite-Trainer-Box/170986765?wl13=2568&selectedSellerId=0",
+      "description": "Shiny Pokémon are so rare that they're almost never seen, and Trainers who catch a Shiny Pokémon consider themselves to be quite lucky—which makes Trainers who manage to catch a Pokémon TCG: Shining Fates Elite Trainer Box very lucky indeed, as the expansion includes more than 100 Shiny Pokémon on beautifully etched cards. Pokémon V and Pokémon VMAX also make an appearance with more than 30 such powerful Pokémon including a Shiny Charizard in Gigantamax form.",
+      "price": 49.98
     }
   ]
 }

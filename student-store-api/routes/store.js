@@ -5,10 +5,6 @@ const router = express.Router();
 
 
 
-router.get("/", async(req, res, next) => {
-    res.status(200).json({ store: "money" })
-})
-
 // list all products
 router.get("/products", async(req, res, next) => {
     try {
@@ -37,5 +33,17 @@ router.get("/products/:productID", async(req, res, next) => {
         next(err);
     }
 })
+
+// create new product
+router.post("/products", async (req, res, next) => {
+    try {
+      const product = req.body.product;
+      const newProduct = await Store.recordProduct(product);
+      res.status(201).json({ product: newProduct });
+
+    } catch (err) {
+      next(err);
+    }
+  })
 
 module.exports = router;

@@ -5,7 +5,7 @@ a {
 }
 
 .ProductDisplay {
-
+    margin: 5vw 5vw;
 }
 
 .ProductDisplay.flex-container {
