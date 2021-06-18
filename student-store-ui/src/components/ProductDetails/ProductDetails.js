@@ -11,6 +11,7 @@ function ProductDetails (props) {
     const { productID } = useParams();
     const [isFetching, setIsFetching] = useState(false);
     const [error, setError] = useState(null);
+    const [cartCount, setCartCount] = useState(0);
     const [product, setProduct] = useState({});
 
     useEffect (() => {
@@ -34,6 +35,22 @@ function ProductDetails (props) {
 
     }, [productID]);
 
+
+    const handleAddOneClick = () => {
+        setCartCount(() => {
+            return cartCount + 1;
+        })
+    }
+
+    const handleMinusOneClick = () => {
+        setCartCount(() => {
+            if (cartCount <= 0)
+                return 0;
+                
+            return cartCount - 1;
+        })
+    }
+
     
     return (
         <div className="ProductDetails">
@@ -51,18 +68,18 @@ function ProductDetails (props) {
                         <span className="price">{formatAmount(product.price)}</span>
 
                         <div className="cart-buttons">
-                            <div className="minus-button btn">
+                            <div className="minus-button btn" onClick={handleMinusOneClick}>
                                 <span className="minus material-icons md-48">remove</span>
                             </div>
 
                             <div className="cart-information">
 
-                                <span className="cart-count">0</span>
+                                <span className="cart-count">{cartCount}</span>
                                 <span className="add-to-cart-button">Add To Cart</span>
 
                             </div>
                             
-                            <div className="plus-button btn">
+                            <div className="plus-button btn" onClick={handleAddOneClick}>
                                 <span className="plus material-icons md-48">add</span>    
                             </div>
                         </div>
