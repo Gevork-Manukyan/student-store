@@ -2,6 +2,8 @@
 
 .Product {
     margin: 0 10px;
+    /* margin-bottom: 40px; */
+    margin-bottom: 3.5vw;
     
     height: 19vw;
     max-height: 321px;

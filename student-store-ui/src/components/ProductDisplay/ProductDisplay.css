@@ -5,13 +5,15 @@ a {
 }
 
 .ProductDisplay {
-    margin: 5vw 5vw;
+    margin: 5vw 5vw 0 5vw;
 }
 
 .ProductDisplay.flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
 }
 
 .product-wrapper {
