@@ -1,15 +1,24 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { useState } from 'react';
 
 import CheckoutBar from "../CheckoutBar/CheckoutBar";
 import Home from "../Home/Home";
 import Navbar from "../Navbar/Navbar";
 import ProductDetails from '../ProductDetails/ProductDetails';
+import { set } from 'lodash';
 
-/* TODO */
 
 
 function App() {
+
+  //array of objects
+  // {
+  //   productName: "blah",
+  //   amount: 5
+  // }
+  const [shoppingCart, setShoppingCart] = useState([]);
+
   return (
     <div className="App">
       
@@ -18,7 +27,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home setShoppingCart={setShoppingCart} />} />
           <Route path="/store/products/:productID" element={<ProductDetails />} />
 
         </Routes>

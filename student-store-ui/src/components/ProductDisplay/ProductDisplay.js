@@ -5,7 +5,7 @@ import "./ProductDisplay.css"
 import Product from "../Product/Product";
 
 
-function ProductDisplay () {
+function ProductDisplay (props) {
 
     /* STATES */
     const [isFetching, setIsFetching] = useState(false);
@@ -40,7 +40,7 @@ function ProductDisplay () {
     return (
         <div className="ProductDisplay flex-container">
             {products.map((product, idx) => (
-                <Product product={product} position={idx} key={idx} /> 
+                <Product product={product} position={idx} key={idx} setShoppingCart={props.setShoppingCart} /> 
             ))}
         </div>
     )

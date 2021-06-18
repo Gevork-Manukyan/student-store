@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './Product.css';
 
 
-function Product ({ product, position }) {
+function Product ({ product, position, setShoppingCart }) {
 
     return (
         <div className="Product">

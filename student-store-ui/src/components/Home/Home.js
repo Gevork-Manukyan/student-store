@@ -4,12 +4,12 @@ import SearchArea from "../SearchArea/SearchArea"
 import ProductDisplay from '../ProductDisplay/ProductDisplay';
 
 
-function Home () {
+function Home (props) {
     return (
         <div className="Home">
             Home
             <SearchArea />
-            <ProductDisplay />
+            <ProductDisplay setShoppingCart={props.setShoppingCart} />
         </div>
     )
 }
