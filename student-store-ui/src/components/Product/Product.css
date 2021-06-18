@@ -15,6 +15,8 @@
 
     border: 1px solid #000000;
     box-sizing: border-box;
+
+    background-color: #f6fafb;
 }
 
 .Product img {
@@ -56,6 +58,7 @@
 
 .bottom-row .productButtons {
     width: 5vw;
+    max-width: 75px;
     align-self: center;
     z-index: 100;
 }
@@ -63,6 +66,9 @@
 .button {
     width: 1.8vw;
     height: 1.8vw;
+    max-height: 26px;
+    max-width: 26px;
+
     margin: 0 0.2vw;
     text-align: center;
     padding: 0;

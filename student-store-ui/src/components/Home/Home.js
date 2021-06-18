@@ -7,7 +7,6 @@ import ProductDisplay from '../ProductDisplay/ProductDisplay';
 function Home (props) {
     return (
         <div className="Home">
-            Home
             <SearchArea />
             <ProductDisplay setShoppingCart={props.setShoppingCart} />
         </div>

@@ -1,7 +1,8 @@
 .ProductDetails {
     margin-left: 60px;
-    margin-top: 5vw;
-
+    padding-top: 5vw;
+    height: 100vh;
+    background-color: #c1c8c7;
 }
 
 .ProductDetails .flex-container {
@@ -64,6 +65,7 @@
     padding: 5px;
     width: 500px;
     align-self: center;
+    background-color: #f6fafb;
 }
 
 .checkout-area .price {
