@@ -14,10 +14,9 @@ function App() {
 
   //array of objects
   // {
-  //   productName: "blah",
-  //   amount: 5
+  //   flower: 5,
   // }
-  const [shoppingCart, setShoppingCart] = useState([]);
+  const [shoppingCart, setShoppingCart] = useState();
 
   return (
     <div className="App">
@@ -27,8 +26,8 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home setShoppingCart={setShoppingCart} />} />
-          <Route path="/store/products/:productID" element={<ProductDetails setShoppingCart={setShoppingCart} />} />
+          <Route path="/" element={<Home shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />} />
+          <Route path="/store/products/:productID" element={<ProductDetails shoppingCart={shoppingCart} setShoppingCart={setShoppingCart} />} />
 
         </Routes>
         

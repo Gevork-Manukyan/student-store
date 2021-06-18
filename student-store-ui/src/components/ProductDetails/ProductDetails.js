@@ -13,6 +13,7 @@ function ProductDetails (props) {
     const [error, setError] = useState(null);
     const [cartCount, setCartCount] = useState(0);
     const [product, setProduct] = useState({});
+    const [cartObject, setCartObject] = useState({});
 
     useEffect (() => {
 
@@ -46,9 +47,16 @@ function ProductDetails (props) {
         setCartCount(() => {
             if (cartCount <= 0)
                 return 0;
-                
+
             return cartCount - 1;
         })
+    }
+
+    const handleAddToCart = () => {
+
+        props.setShoppingCart(oldCart => ({
+            ...oldCart, [product.name]: cartCount        
+        }));
     }
 
     
@@ -75,7 +83,7 @@ function ProductDetails (props) {
                             <div className="cart-information">
 
                                 <span className="cart-count">{cartCount}</span>
-                                <span className="add-to-cart-button">Add To Cart</span>
+                                <span className="add-to-cart-button" onClick={handleAddToCart}>Add To Cart</span>
 
                             </div>
                             
