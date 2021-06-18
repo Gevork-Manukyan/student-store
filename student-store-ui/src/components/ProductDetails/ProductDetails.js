@@ -54,8 +54,11 @@ function ProductDetails (props) {
 
     const handleAddToCart = () => {
 
+        if (cartCount <= 0)
+            return;
+
         props.setShoppingCart(oldCart => ({
-            ...oldCart, [product.name]: cartCount        
+            ...oldCart, [product.name]: oldCart[product.name] ? oldCart[product.name] + cartCount : cartCount        
         }));
     }
 

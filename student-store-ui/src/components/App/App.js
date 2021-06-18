@@ -16,7 +16,7 @@ function App() {
   // {
   //   flower: 5,
   // }
-  const [shoppingCart, setShoppingCart] = useState();
+  const [shoppingCart, setShoppingCart] = useState({});
 
   return (
     <div className="App">
