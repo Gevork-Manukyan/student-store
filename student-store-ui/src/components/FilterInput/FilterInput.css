@@ -1,6 +1,8 @@
 .FilterInput {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 5vw;
+    padding-top: 3vw;
 }
 
 .FilterInput input {
