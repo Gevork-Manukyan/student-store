@@ -11,7 +11,7 @@ function ProductDetails (props) {
     const { productID } = useParams();
     const [isFetching, setIsFetching] = useState(false);
     const [error, setError] = useState(null);
-    const [product, setProduct] = useState();
+    const [product, setProduct] = useState({});
 
     useEffect (() => {
 
@@ -39,18 +39,16 @@ function ProductDetails (props) {
         <div className="ProductDetails">
             <div className="flex-container">
                 <div className="image-area">
-                    <img />
+                    <img src={product.source} alt={product.name} /> 
+                    <span className="product-category">{product.category}</span>
                 </div>
                 
                 <div className="information-area">
-                    <span className="product-title"></span>
-                    
-                    <div className="product-description">
-
-                    </div>
+                    <span className="product-title"> {product.name} </span>
+                    <div className="product-description"> {product.description} </div>
 
                     <div className="checkout-area">
-                        <span className="price"></span>
+                        <span className="price">{product.price}</span>
 
                         <div className="cart-buttons">
                             <button className="minus-button"></button>
@@ -59,7 +57,7 @@ function ProductDetails (props) {
 
                                 <span className="cart-count"></span>
                                 <button className="add-to-cart-button"></button>
-                                
+
                             </div>
                             
                             <button className="plus-button"></button>

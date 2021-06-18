@@ -1,6 +1,5 @@
 import axios from "axios"
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import "./ProductDisplay.css"
 import Product from "../Product/Product";
@@ -41,7 +40,7 @@ function ProductDisplay () {
     return (
         <div className="ProductDisplay flex-container">
             {products.map((product, idx) => (
-                <Link to={`/store/products/${product.id}`}> <Product product={product} position={idx} key={idx} /> </Link>
+                <Product product={product} position={idx} key={idx} /> 
             ))}
         </div>
     )
