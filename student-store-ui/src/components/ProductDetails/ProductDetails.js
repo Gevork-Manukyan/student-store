@@ -13,7 +13,6 @@ function ProductDetails (props) {
     const [error, setError] = useState(null);
     const [cartCount, setCartCount] = useState(0);
     const [product, setProduct] = useState({});
-    const [cartObject, setCartObject] = useState({});
 
     useEffect (() => {
 

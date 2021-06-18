@@ -6,7 +6,6 @@ import CheckoutBar from "../CheckoutBar/CheckoutBar";
 import Home from "../Home/Home";
 import Navbar from "../Navbar/Navbar";
 import ProductDetails from '../ProductDetails/ProductDetails';
-import { set } from 'lodash';
 
 
 
