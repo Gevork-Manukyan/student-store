@@ -3,10 +3,10 @@
 .Product {
     margin: 0 10px;
     
-    height: 16vw;
+    height: 19vw;
     max-height: 321px;
     
-    width: 13vw;
+    width: 16vw;
     max-width: 240px;
 
     left: 564px;
@@ -24,40 +24,55 @@
     top: 190px;
 }
 
+.bottom-row-wrapper {
+    height: auto;
+    width: 100%;
+    margin-top: 0.3vw;
+}
+
 .Product .bottom-row.flex-container {
     display: flex;
     justify-content: space-between;
 }
 
-.Product .productInfo {
+.bottom-row .productInfo {
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    margin-left: 10px;
 }
 
-.Product .productInfo .productName {
+.productInfo .productName {
     font-size: 1vw;
     word-wrap: normal;
+    margin-bottom: 0.7vw;
+    text-align: start;
 }
 
-.Product .productInfo .productPrice {
+.productInfo .productPrice {
     font-size: 1vw;
     text-align: start;
 }
 
 
-.productButtons {
-    width: 28%;
+.bottom-row .productButtons {
+    width: 5vw;
     align-self: center;
+    z-index: 100;
 }
 
 .button {
-    width: 16px;
-    height: 16px;
-    margin: 0 3px;
+    width: 1.8vw;
+    height: 1.8vw;
+    margin: 0 0.2vw;
     text-align: center;
     padding: 0;
-    z-index: 100;
+    user-select: none;
+    background-color: white;
+    font-size: 1.5vw;
+}
+
+.button:active {
+    transform: translateY(1px);
 }
 
 .button.addButton {

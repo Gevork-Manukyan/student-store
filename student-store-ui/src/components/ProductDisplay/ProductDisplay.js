@@ -40,7 +40,9 @@ function ProductDisplay (props) {
     return (
         <div className="ProductDisplay flex-container">
             {products.map((product, idx) => (
-                <Product product={product} position={idx} key={idx} setShoppingCart={props.setShoppingCart} /> 
+                <div className="product-wrapper">
+                    <Product product={product} position={idx} key={idx} setShoppingCart={props.setShoppingCart} /> 
+                </div>
             ))}
         </div>
     )
