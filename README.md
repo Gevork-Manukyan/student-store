@@ -32,20 +32,20 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+The labs prepared me for most of the assignment. If I had more time I could implement all the features.  
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+If I had more time I would implement all the stretch fetures, restyle everything and probably use a library, and probably add more features that I think of along the way.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+Overall, the project demos went smoothly. Something that I saw one of my peers do was use Material UI to create the product cards on the home screen, which I will probably look into and learn how to use. I also saw someone use media queries which I also wish to learn how to use. 
 
-### Open-source libraries used
+### Open-source libraries used 
 
 - Add any links to open-source libraries used in your project.
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+Shout out to Ann Wang for help me out and making a great website. Shoutout to Henry Mu for being a great group mate.
