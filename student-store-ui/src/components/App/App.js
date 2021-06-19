@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       
       <BrowserRouter>
-        <CheckoutBar />
+        <CheckoutBar shoppingCart={shoppingCart} />
         <Navbar />
 
         <Routes>

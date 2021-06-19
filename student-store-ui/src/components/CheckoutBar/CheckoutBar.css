@@ -26,3 +26,15 @@
 .arrow-button:hover {
     cursor: pointer;
 }
+
+.shoppingCart.open {
+
+}
+
+.shoppingCart.closed {
+    display: none;
+}
+
+.item {
+    display: block;
+}

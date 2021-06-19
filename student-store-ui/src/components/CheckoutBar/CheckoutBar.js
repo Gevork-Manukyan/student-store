@@ -2,7 +2,7 @@ import './CheckoutBar.css';
 
 import { useState } from "react"
 
-function CheckoutBar () {
+function CheckoutBar (props) {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -13,6 +13,19 @@ function CheckoutBar () {
             setIsOpen(true);
     } 
 
+    const renderShoppingCart = () => {
+        const productsArr = [];
+
+        for (const property in props.shoppingCart) {
+            productsArr.push(
+                <>
+                    <span className="item">{property}: {props.shoppingCart[property]}</span>
+                </>
+            )
+        }
+
+        return productsArr;
+    }
 
     return (
         <section className={`CheckoutBar ${isOpen ? "open" : "closed"}`}>
@@ -21,8 +34,11 @@ function CheckoutBar () {
                     <i className="material-icons md-48">arrow_forward</i>
                 </span>
 
-                <div className="shoppingCart">
-
+                <div className={`shoppingCart ${isOpen ? "open" : "closed"}`}>
+                    <span>Shopping Cart</span>
+                    <div>
+                        {renderShoppingCart()}
+                    </div>
                 </div>
             </div>
         </section>
