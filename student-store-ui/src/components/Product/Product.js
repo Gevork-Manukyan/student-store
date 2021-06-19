@@ -49,8 +49,14 @@ function Product ({ product, position, setShoppingCart }) {
                     </Link>
 
                     <div className="productButtons">
-                        <button className="addButton button" onClick={handleAddOneClick}>+</button>
-                        <button className="removeButton button" onClick={handleMinusOneClick}>-</button>
+                        <div className="plus-minus-btns">
+                            <button className="addButton button" onClick={handleAddOneClick}>+</button>
+                            <button className="removeButton button" onClick={handleMinusOneClick}>-</button>
+                        </div>
+                        <div className="cart-count-area">
+                            <span className="cart-count button">{cartCount}</span>
+                            <button className="add-to-cart-btn button" onClick={handleAddToCart}>&#10003;</button>
+                        </div>
                     </div>
                 </div>
             </div>

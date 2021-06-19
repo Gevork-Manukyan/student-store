@@ -2,10 +2,9 @@
 
 .Product {
     margin: 0 10px;
-    /* margin-bottom: 40px; */
     margin-bottom: 3.5vw;
     
-    height: 19vw;
+    height: 20vw;
     max-height: 321px;
     
     width: 16vw;
@@ -57,11 +56,27 @@
     text-align: start;
 }
 
-
 .bottom-row .productButtons {
     width: 5vw;
     max-width: 75px;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-count-area {
+    margin-top: 5px;
+}
+
+.cart-count-area .cart-count {
+    fill: none;
+}
+
+.cart-count-area .add-to-cart-btn {
+    margin-left: 0.8vw;
+    color: blue;
+    padding-bottom: 23px;
+    border-radius: 42%;
 }
 
 .button {
@@ -88,4 +103,8 @@
 
 .button.removeButton {
     border: 1px solid #B92A2A;
+}
+
+.button.add-to-cart-btn {
+    border: 2.5px solid blue;
 }
