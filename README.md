@@ -28,6 +28,8 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
 https://www.loom.com/share/750bad42377440c593b4c10885b0bc81
 
+https://www.loom.com/share/b59b708f81d048a0b31b879e7b5e1067
+
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
