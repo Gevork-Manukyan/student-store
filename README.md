@@ -28,7 +28,7 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
 https://www.loom.com/share/750bad42377440c593b4c10885b0bc81
 
-https://www.loom.com/share/b59b708f81d048a0b31b879e7b5e1067
+https://www.loom.com/share/6fd20965ce9741a89b96b012e58fbaf1
 
 ### Reflection
 
