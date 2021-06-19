@@ -75,7 +75,6 @@
 .cart-count-area .add-to-cart-btn {
     margin-left: 0.8vw;
     color: blue;
-    padding-bottom: 23px;
     border-radius: 42%;
 }
 
@@ -107,4 +106,5 @@
 
 .button.add-to-cart-btn {
     border: 2.5px solid blue;
+    font-size: 1vw;
 }
