@@ -21,6 +21,7 @@
 
 .arrow-button.open i {
     transform: rotate(180deg);
+    margin-bottom: 50px;
 }
 
 .arrow-button:hover {
@@ -28,13 +29,27 @@
 }
 
 .shoppingCart.open {
+    
+}
 
+.item-area {
+    padding-left: 5vw;
+}
+
+.cartTitle {
+    font-size: large;
 }
 
 .shoppingCart.closed {
     display: none;
 }
 
+.shoppingCart .cartTitle {
+    margin-bottom: 30px;
+}
+
 .item {
     display: block;
+    margin-bottom: 7px;
+    text-align: start;
 }

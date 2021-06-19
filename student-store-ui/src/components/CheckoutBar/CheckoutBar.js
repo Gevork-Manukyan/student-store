@@ -35,8 +35,8 @@ function CheckoutBar (props) {
                 </span>
 
                 <div className={`shoppingCart ${isOpen ? "open" : "closed"}`}>
-                    <span>Shopping Cart</span>
-                    <div>
+                    <div className="cartTitle">Shopping Cart</div>
+                    <div className="item-area">
                         {renderShoppingCart()}
                     </div>
                 </div>
